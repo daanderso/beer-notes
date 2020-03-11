@@ -1,0 +1,56 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background: url("../images/beer.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;}
+
+#banner h1 {
+  	text-align: center;
+  }
+
+#new-note-btn {
+    display: flex;
+    justify-content: center;
+   }
+
+.btn{
+  border:0px!important;
+  border-radius:2px!important;
+  transition:all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.14), 0 1px 2px rgba(0,0,0,0.24);
+  cursor:pointer;
+}
+
+.btn-primary{
+  background-color:#007BFF;
+}
+
+.btn-primary:hover{
+  background-color:#007BFF;
+  box-shadow: 0 10px 20px rgba(0,0,0, 0.19), 0 6px 6px rgba(0,0,0, 0.23);
+}
+
+.bottle-btn:focus{
+  /*outline: none;*/
+  outline-color:black;
+  border:0px!important;
+  border-radius:50%;
+  transition:all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.14), 0 1px 2px rgba(0,0,0,0.24);
+  cursor:pointer;
+}
+
+.bottle-btn:hover{
+  border-radius:50%;
+  box-shadow: 0 10px 20px rgba(0,0,0, 0.19), 0 6px 6px rgba(0,0,0, 0.23);
+}
+
+#sticky-footer {
+    flex-shrink: none;
+    background-color: #007BFF;
+    border-top: 0.5px solid white;
+  }
