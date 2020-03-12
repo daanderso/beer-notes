@@ -27,7 +27,7 @@
 <!--    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#beerForm" aria-expanded="false" aria-controls="beerForm">Enter a New BeerNote</button>-->
 <!--</div>-->
 
-<div class="container" style="max-width:600px;margin:260px auto;">
+<div class="container" style="max-width:600px;margin:150px auto;">
     <form id="beerForm" class="collapse"  role="form">
         <div class="form-group">
             <label for="beerName">Name</label>
@@ -37,9 +37,37 @@
             <label for="beerStyle">Style</label>
             <input type="text" class="form-control" id="beerStyle" placeholder="Enter style">
         </div>
-        <div class="form-group">
+<!--        <div class="form-group">-->
+<!--            <label for="origin">Country of Origin</label>-->
+<!--            <input type="text" class="form-control" id="origin" placeholder="Enter country of origin">-->
+<!--        </div>-->
+        <div id="origin-dropdown">
             <label for="origin">Country of Origin</label>
-            <input type="text" class="form-control" id="origin" placeholder="Enter country of origin">
+            <div class="input-group mb-3">
+                <div>
+                    <select class="custom-select" id="origin">
+                        <option selected>Choose Country of Origin</option>
+                        <option value="USA">USA</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Czech Republic">Czech Republic</option>
+                        <option value="China">China</option>
+                        <option value="England">England</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Jamaica">Jamaica</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Scotland">Scotland</option>
+                    </select>
+                </div>
+            </div>
         </div>
         <div class="form-group">
             <label for="note">Beer Note:</label>
@@ -51,7 +79,7 @@
     </form>
 </div>
 
-<div id="beer-note-table" class="container" style="max-width:900px;margin:260px auto;">
+<div id="beer-note-table" class="container" style="max-width:900px;margin:150px auto;">
     <table class="table table-striped table-light table-bordered">
         <thead>
         <tr class="bg-primary" style="color: white">
