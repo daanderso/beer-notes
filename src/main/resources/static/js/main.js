@@ -52,33 +52,4 @@ $(document).ready(function(){
         });
     }
 
-
-  //load edit and delete buttons
-  function loadButtons() {
-        $(".editBeer").click(function(e){
-            editOneBeer($($(this)[0]).data("beerid"));
-            e.preventDefault();
-        });
-
-        $(".deleteBeer").click(function(e){
-            deleteBeer($($(this)[0]).data("beerid"));
-            e.preventDefault();
-        })
-    }
-
-    //function to delete a beer from the beer list
-    function deleteBeer(id) {
-            $.ajax({
-                url: 'http://localhost:8080/api/beernotes/deletebeer/' + id,
-                method: 'DELETE',
-                //contentType : 'application/json;charset=utf-8',
-                dataType: 'json',
-                // data: JSON.stringify(data),
-                success: function(data) {
-                    console.log(data);
-                    getBeerList();
-                }
-            });
-        }
-
 });
