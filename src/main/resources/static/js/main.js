@@ -33,8 +33,6 @@ $(document).ready(function(){
        //reset form to clear form data
        $("beerForm").trigger("reset");
 
-       //stops page from refreshing
-      // e.preventDefault();
     });
 
     // function to post new beer to beer list
